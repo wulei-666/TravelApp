@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Banner from '@/components/Banner';
 class Com extends Component {
   componentDidMount () {
     this.props.getHomeBannerListData();
@@ -10,9 +9,7 @@ class Com extends Component {
     return (
       <div className = "box">
         <header className = "header">首页头部</header>
-        <div className = "content">
-          <Banner bannerlist = { this.props.homeBannerList } />
-        </div>
+        <div className = "content">首页内容</div>
       </div>
     )
   }
