@@ -1,31 +1,31 @@
 import React from 'react';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
-import Home from '@/views/home';
-import Kind from '@/views/kind';
+import Find from '@/views/find';
+import Order from '@/views/order';
 import User from '@/views/user';
-import Cart from '@/views/cart';
+import Share from '@/views/share';
 const Com = () => (
   <div className = "container">
     <Switch>
-      <Route path = "/home" component = { Home } />
-      <Route path = "/kind" component = { Kind } />
-      <Route path = "/cart" component = { Cart } />
+      <Route path = "/find" component = { Find } />
+      <Route path = "/order" component = { Order } />
       <Route path = "/user" component = { User } />
-      <Redirect to = "/home" />
+      <Route path = "/share" component = { Share } />
+      <Redirect to = "/find" />
     </Switch>
     <footer className = "footer">
       <ul>
-        <NavLink to = "/home">
-          <span></span><p>首页</p>
+        <NavLink to = "/find">
+          <span className="iconfont icon-iconfontzhizuobiaozhun07"></span><p>发现</p>
         </NavLink>
-        <NavLink to = "/kind">
-          <span></span><p>分类</p>
+        <NavLink to = "/order">
+          <span className="iconfont icon-fenxiang"></span><p>分享</p>
         </NavLink>
-        <NavLink to = "/cart">
-          <span></span><p>购物车</p>
+        <NavLink to = "/share">
+          <span className="iconfont icon-icondd1"></span><p>订单</p>
         </NavLink>
         <NavLink to = "/user">
-          <span></span><p>我的</p>
+          <span className="iconfont icon-weibiaoti-"></span><p>我的</p>
         </NavLink>
       </ul>
     </footer>
