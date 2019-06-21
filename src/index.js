@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import './main.scss';
+import './mock/index';
 
 ReactDOM.render(
 <Provider store = { store }>

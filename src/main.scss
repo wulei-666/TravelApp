@@ -27,6 +27,12 @@ html, body, #root, .container {
       @include rect(100%, 100%);
       @include flexbox();
       a {
+        span {
+          font-size: .24rem;
+        }
+        p {
+          font-size: .12rem
+        }
         @include flex();
         @include rect(auto, 100%);
         @include flexbox();
