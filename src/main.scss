@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-@import '@/lib/reset.scss';
-=======
 @import './lib/reset.scss';
->>>>>>> 15af07c7649d2e00774cea4bf8f11dc1fd3a78b2
 * { touch-action: pan-y }
 html, body, #root, .container {
   @include rect(100%, 100%);
