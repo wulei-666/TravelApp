@@ -1,0 +1,172 @@
+@import '@/lib/reset.scss';
+.box{
+  .header {
+    @include flexbox();
+    .food-left {
+      @include rect(15%, 100%);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      .icon-fanhui1 {
+        font-size: .14rem;
+      }
+    }
+    .food-input {
+      @include flex();
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      .search {
+        @include rect (2.62rem, .25rem);
+        border-radius: 1rem;
+        border: .01rem  solid #FFFFFF;
+        background-color: #FFFFFF;
+        text-align: center;
+        font-size: .14rem;
+        color:#808080;
+        .active {
+          @include rect (2rem, .25rem); 
+        }
+        .icon-sousuo {
+          @include rect(.16rem, .16rem);
+          // margin-left:.2rem;
+        }
+      }
+    }
+    .food-right {
+      @include rect(15%, 100%);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      color: #ffffff;
+    }
+  }
+}
+.content {
+  .banner {
+    @include rect(100%, 1.86rem);
+    @include background-color(#F0EEEE);
+    img{}
+    p {
+    text-align:center;
+    @include color(#101010);
+    font-size: .14rem;
+    }
+    }
+    .recommend {
+      @include rect (2.63rem, 2.3rem);
+      background-color: #BFBDBD;
+      margin: -.59rem auto 0;
+      border-radius: .1rem;
+      p {
+        padding: .1rem 0 0 .12rem;
+        font-size: .12rem;
+        color: #101010;
+      }
+      .title {
+        text-align: center;
+        color:#101010;
+        font-size: .3rem;
+        padding-top: .11rem;
+      }
+      i {
+        margin-top: .1rem;
+        display: block;
+        text-align: center;
+        color: #101010;
+        font-size: .12rem;
+      }
+      .introduce{
+        margin-top: .1rem;
+        text-align: center;
+        color: #101010;
+        font-size: .12rem;
+        span {
+          @include margin(0 .05rem);
+        }
+
+      }
+      .share {
+        text-align: center;
+        margin-top: .4rem;
+        .icon-fenxiang2 {
+          font-size: .3rem;
+        }
+        .icon-xin {
+          font-size: .2rem;
+        }
+        .price {
+          margin-left: .8rem;
+          font-size: .3rem;
+          color:#101010;
+        }
+      }
+    }
+  .hotrecommend {
+    color: #101010;
+    font-size: .2rem;
+    margin-left: .2rem;
+    margin-top: .3rem;
+  }
+  .space-carousel {
+    padding: 16px;
+    background: #DEF1E5;
+    overflow: hidden;
+  }
+  .slider.am-carousel.space-carousel {
+    width:100%;
+    background-color:#FFFFFF;
+    margin: 0;
+  }
+  .am-carousel-wrap-dot {display: none;}
+  // img {
+  //   @include rect(1.60rem, 1.08rem);
+  // }
+  .slider-slide {
+    margin: 0;
+  }
+  .foods {
+    display: block;
+    text-align: center;
+    font-size: .14rem;
+    color: #101010;
+  }
+  .foodtravel {
+    p {
+      padding: .1rem 0 0 .2rem;
+      font-size: .2rem;
+      color: #101010;
+    }
+    ul {
+       margin-left: .2rem;
+       margin-top: .12rem;
+
+      li {
+        margin-bottom: .2rem;
+        @include flexbox();
+        .foodtravel-left {
+          @include rect(1.6rem, 1.2rem);
+          @include background-color(#DEF1E5);
+        }
+        .foodtravel-right {
+          margin-left: .09rem;
+          @include flex();
+          .hotel {
+            font-size:.14rem;
+            color:#101010;
+          }
+          h3 {
+            font-size:.2rem;
+          }
+          .content_contentss {
+            margin-top:.17rem;
+            font-size:.14rem;
+            color:#101010;
+          }
+        }
+
+      }
+    }
+  }
+
+}

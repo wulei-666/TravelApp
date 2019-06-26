@@ -12,12 +12,14 @@ html, body, #root, .container {
     @include flexbox();
     @include flex-direction(column);
     .header {
-      @include rect(100%, 0.44rem);
-      @include background-color(#f66);
+      @include rect(100%, 0.4rem);
+      background-color: rgba(240, 238, 238, 1);
+
     }
     .content {
       @include flex();
       @include rect(100%, auto);
+      overflow: auto;
     }
   }
   .footer {
@@ -48,3 +50,5 @@ html, body, #root, .container {
     }
   }
 }
+
+

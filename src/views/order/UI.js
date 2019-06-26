@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '@/components/Footer'
 
 class Com extends Component {
   componentDidMount () {
@@ -7,9 +8,12 @@ class Com extends Component {
 
   render () {
     return (
-      <div className = "box">
-        <header className = "header">分类头部</header>
-        <div className = "content">分类内容</div>
+      <div className='container'>
+        <div className = "box">
+          <header className = "header">dingdan头部</header>
+          <div className = "content">dingdan内容</div>
+        </div>
+        <Footer />
       </div>
     )
   }

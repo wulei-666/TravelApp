@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './layout/App.js';
+import FindApp from '@/layout/FindApp.js';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -12,6 +13,7 @@ ReactDOM.render(
 <Provider store = { store }>
   <HashRouter>
     <Switch>
+      <Route path = "/finds" component = { FindApp } />
       <Route path = "/" component = { App } />
     </Switch>
   </HashRouter>

@@ -1,0 +1,114 @@
+@import '@/lib/reset.scss';
+.box {
+  .header {
+    @include flexbox();
+    .header-left {
+      @include rect(10%, 100%)
+    }
+    .header-right {
+      @include flex();
+    }
+  }
+  .content {
+    .bg {
+      @include rect(100%, 1.55rem);
+      @include background-color(#eae5e5);
+    }
+    .ticket {
+      @include rect(3.23rem, 2.48rem);
+      @include background-color(#CECECE);
+      overflow:hidden;
+      border-radius: .1rem;
+      margin-left: .26rem;
+      margin-top: -.57rem;
+      .am-tabs-default-bar-content {
+        @include background-color(#CECECE);
+        font-size: .18rem;
+        .am-tabs-default-bar-tab {
+          color:#101010;
+        }
+      }
+      .am-tabs-default-bar-underline {
+        border: .01rem #FDFAFA solid;
+      }
+    }
+    .plane {
+      ul {
+        @include flexbox();
+        li {
+          @include rect(100%, .5rem);
+          @include flexbox();
+          @include text-align();
+          border-bottom: .01rem solid #FDFAFA;
+          font-size: .18rem;
+          color: #101010;
+          line-height: .5rem;
+          .plane-left {
+            @include rect(20%, .5rem);
+          }
+          .plane-middle{
+            @include flex();
+            font-size: .24rem;
+          }
+          .plane-right {
+            @include rect(20%, .5rem);
+          }
+        }
+      }
+      ul {
+        @include flexbox();
+        li {
+          @include rect(100%, .5rem);
+          @include flexbox();
+          @include text-align();
+          border-bottom: .01rem solid #FDFAFA;
+          font-size: .18rem;
+          color: #101010;
+          line-height: .5rem;
+          .plane-left1 {
+            @include rect(25%, .5rem);
+          }
+          .plane-middle1{
+            @include rect(15%, .5rem);
+            font-size: .12rem;
+          }
+          .plane-right1 {
+            margin-left: 30%;
+            @include rect(40% , .5rem);
+            font-size: .18rem;
+            color: #A8A6A6;
+            // @include rect(25%, .5rem);
+          }
+        }
+      
+      }
+    }
+    .box1 {
+      margin-left: .08rem;
+      margin-top: .12rem;
+      @include flexbox();
+      @include rect(100%, .17rem);
+      .crile {
+        @include rect(.17rem, .17rem);
+        border-radius: 50%;
+        @include background-color(#ffffff);
+      }
+      span {
+        @include flex();
+        padding-left: .04rem;
+        font-size:.12rem;
+        color:#101010;
+      }
+    }
+    .search {
+      margin: 0 auto;
+      text-align: center;
+      border-radius: .36rem;
+      line-height: .3rem;
+      margin-top: .2rem;
+      font-size:.14rem;
+      @include rect(2.38rem, .3rem);
+      @include background-color(#ffffff);
+    }
+  }
+}

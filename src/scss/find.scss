@@ -1,0 +1,245 @@
+@import '@/lib/reset.scss';
+.box {
+  overflow: auto;
+  .header {
+    @include flexbox();
+    .find-left {
+      @include rect(20%, 100%);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+    }
+    .find-input {
+      @include flex();
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      .img1 {
+        @include rect(1.5rem, .20rem);
+      }
+      .search {
+        @include rect (2.62rem, .25rem);
+        border-radius: 1rem;
+        border: .01rem  solid #FFFFFF;
+        background-color: #FFFFFF;
+        text-align: center;
+        font-size: .14rem;
+        color:#808080;
+        .active {
+          @include rect (2rem, .25rem); 
+        }
+        .icon-sousuo {
+          
+          // @include rect(.16rem, .16rem);
+        }
+      }
+    }
+    .find-right {
+      @include rect(20%, 100%);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      color: #ffffff;
+    }
+  }
+}
+.content{
+  overflow:auto;
+  .banner {
+    @include rect(100%, .9rem);
+    @include background-color(#F0EEEE);
+    img{}
+    p {
+    text-align:center;
+    @include color(#101010);
+    font-size: .14rem;
+    }
+    }
+    .find-nav {
+    @include rect (100%, .71rem);
+    @include background-color(#FFFFFF);
+    @include flexbox();
+    @include align-items();
+    ul {
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include rect(100%, 80%);
+      a {
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items();
+        @include rect(15%, 100%);
+        font: (0.008rem/.16rem "");
+        p {
+          width: .32rem;
+          height: .32rem;
+          // border: .01rem solid #808080;
+          border-radius: 50%;
+          background-color: #EEEEEE ;
+          img {
+          }
+        }
+        span {
+          font-size: .14rem;
+          color: #808080;
+        }
+      }
+    }
+    }
+    .find-content {
+    .activites{
+      // height:5.5rem;
+      overflow: auto;
+      h4{
+        text-align: center;
+        font-size: .14rem;
+        color:#808080 ;
+      }
+      p {
+        text-align: center;
+        font-size: .12rem;
+        color:#808080 ;
+        padding-bottom: .13rem;
+      }
+      .activite {
+        margin-left: .07rem;
+        float: left;
+        @include rect(1.76rem, 1.75rem);
+        .images {
+          @include rect(1.80rem,1.24rem);
+            background-color: rgba(240, 238, 238, 1);
+            border-radius: .06rem;
+        }
+        .name {
+          font-size: .12rem;
+          color: #101010 ;
+        }
+        .price {
+          font-size: .12rem;
+          color: #101010 ;
+          padding-right: .24rem;
+        }
+        span {
+          font-size: .12rem;
+          color:#808080;
+        }
+      }
+    }
+  }
+  .find-destination{
+    .destination {
+      text-align: center;
+      color:#808080 ;
+      h4 {
+        font-size: .14rem;
+      }
+      p {
+        font-size: .12rem;
+        padding-bottom: .13rem;
+      }
+      ul {
+       
+        @include flexbox();
+        @include flex-direction();
+        @include justify-content();
+        flex-wrap: wrap;
+        li {
+          position: relative;
+          @include rect(1.20rem, 1.24rem);
+          @include align-items();
+          @include background-color(#F0EEEE);
+          // @include margin(0 .15rem);
+          border-radius: .06rem;
+          margin-top: .05rem;
+          margin-right: .01rem;
+          margin-bottom: .025rem;
+          img {
+            // width: 1.2rem;
+            // height: 1.24rem;
+          }
+          span {
+            position: absolute;
+            top: .84rem;
+            left: .75rem;
+            font-size: .12rem;
+            color:#808080 ;
+          }
+          i{
+            position: absolute;
+            top: 1.01rem;
+            left: .63rem;
+            font-size: .12rem;
+            color:#808080 ;
+          }
+        }
+      }
+    }
+  }
+  .find-fun {
+    .funny {
+     
+      text-align: center;
+      color:#808080 ;
+      h4 {
+        font-size: .14rem;
+        margin-top: .29rem;
+      }
+      p {
+        font-size: .12rem;
+        padding-bottom: .13rem;
+      }
+      .bigbox {
+        background-color: #B7B7B7;
+        border-top: .01rem solid #BBBBBB;
+        .box{
+         
+          margin-bottom: .04rem;
+          background-color: #B7B7B7;
+          .find-funbox {
+            margin-bottom: .04rem;
+            border-radius: .06rem;
+            margin: 0 auto;
+            @include rect (95%, .97rem);
+            background-color: #EEEEEE;
+            @include flexbox();
+            .funbox-left {
+              border-radius: .06rem;
+              @include rect(.97rem, .98rem);
+              background-color: rgba(225, 223, 223, 1);
+            }
+            .funbox-right{
+              border-radius: .06rem;
+              @include flex();
+              @include flexbox();
+              @include flex-direction(column);
+              .funbox-right-top {
+                @include rect (100%, .27rem);
+                .designation {
+                  float:left;
+                  margin-left: .11rem;
+                  line-height: .27rem;
+                  font-size: .12rem;
+                  color:#101010;
+                }
+                .iconfont {
+                  float: right;
+                  margin-right: .1rem;
+                  font-size: .1rem;
+                  line-height: .27rem;
+                }
+                
+              }
+              .funbox-right-bottom {
+                border-radius: .06rem;
+                @include rect(2.2rem, .6rem);
+                background-color: rgba(225, 223, 223, 1);
+                margin:0 auto;
+              }
+            }
+          }
+        }
+    }
+  }
+  }
+}
