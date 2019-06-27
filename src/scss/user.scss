@@ -1,0 +1,161 @@
+@import '@/lib/reset.scss';
+
+.content {
+
+  .user-top {
+    @include rect(100%, auto);
+    padding-left: 2.2rem;
+    height: .44rem;
+    span {
+      @include rect(.24rem, .24rem);
+      margin: 0 0 0 .2rem;
+      font-size: .26rem;
+      line-height: .44rem;
+    }
+  }
+  .user-login {
+    @include rect(3rem, 1.8rem);
+    background: #F7F5F5;
+    border-radius: .1rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include flexbox();
+    align-items: center;
+    justify-content: center;
+    i {
+      @include rect(.61rem, .61rem);
+      // background: #F7F5F5;
+      background: red;
+      border-radius: 50%;
+    }
+    div {
+      margin-left:.25rem;
+      @include rect(1.1rem, .3rem);
+      background: #fff;
+      font-size: .14rem;
+      line-height: .3rem;
+      text-align: center;
+      color: #888;
+    }
+  }
+  .user-hadLogin {
+    @include rect(3rem, 1.8rem);
+    background: #F7F5F5;
+    border-radius: .1rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .user-hadLogin-top {
+      @include flexbox();
+      align-items: center;
+      padding: .21rem 0 .42rem .13rem;
+      justify-content: space-between;
+      .user-hadLogin-top-l {
+        @include flexbox();
+        align-items: center;
+        i {
+          @include rect(.61rem, .61rem);
+          // background: #F7F5F5;
+          background: red;
+          border-radius: 50%;
+        }
+        div {
+          padding-left: .1rem;
+          h3 {
+            font-size: .14rem;
+            color: #101010;
+          }
+          p {
+            font-size: .12rem;            
+            color: #101010;
+          }
+        }
+      }
+      .user-hadLogin-top-r {
+        font-size: .14rem;
+        color: #101010;
+        padding: .2rem .2rem 0 0;
+      }
+    }
+    .user-hadLogin-bottom {
+      ul {
+        @include flexbox();
+        li {
+          text-align: center;
+          padding-left: .19rem;
+          span {
+            font-size: .14rem;
+            color: #101010;
+          }
+          p {
+            font-size: .12rem;
+            color: #101010;
+          }
+        }
+      }
+    }
+  }
+  .user-wallet {
+    @include rect(100%, auto);
+    .user-wallet-title {
+      @include rect(.72rem, .25rem);
+      color: #101010;
+      font-size: .18rem;
+      margin: .2rem 0 .15rem .1rem;
+    }
+    .user-wallet-content {
+      ul {
+        @include flexbox();
+        justify-content: space-around;
+        text-align: center;
+        li {
+          @include rect(33%, auto);
+          @include flexbox();
+          @include flex-direction(column);
+          align-items: center;
+          i {
+            @include rect(.3rem, .3rem);
+            background: red;
+            border-radius: 50%;
+            border: .01rem solid #bbb;
+          }
+          p {
+            color: #101010;
+            font-size: .14rem;
+            margin: .1rem 0 .3rem 0;
+          }
+        }
+      }
+    }
+  }
+  .user-nav {
+    @include rect(100%, auto);
+    background: #F0F0F0;
+    ul {
+      @include flexbox();
+      flex-wrap: wrap;
+      padding-bottom: .18rem;
+      li {
+        @include rect(33%, auto);
+        @include flexbox();
+        @include flex-direction(column);
+        align-items: center;
+        i {
+          @include rect(.37rem, .37rem);
+          background: red;
+          border-radius: 50%;
+          border: .01rem solid #bbb;
+          margin-top: .23rem;
+        }
+        p {
+          font-size: .14rem;
+          margin-top: .1rem;
+          color: #101010;
+        }
+      }
+    }
+  }
+}

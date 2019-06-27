@@ -1,0 +1,25 @@
+@import '@/lib/reset.scss';
+
+.startBox {
+  @include rect(100%, 100%);
+  // background: url();
+  .content {
+    position: relative;
+    margin: 4.44rem 0 0 0;
+  }
+  p {
+    @include rect(2.72rem, .53rem);
+    text-align: center;
+    line-height: .53rem;
+    font-size: .15rem;
+    color: #a4a4a4;
+    border: .01rem solid #bbb;
+    border-radius: 1rem;
+    &.start-p1 {
+      margin: 0 0 .28rem .53rem;
+    }
+    &.start-p2 {
+      margin: 0 0 .67rem .53rem;
+    }
+  }
+}

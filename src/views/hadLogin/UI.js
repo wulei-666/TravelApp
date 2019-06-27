@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '@/scss/user.scss'
-import UserLogin from '@/components/user-login';
-import Footer from '@/components/Footer'
+import UserHadLogin from '@/components/user-hadLogin';
 
 class Com extends Component {
   render () {
@@ -13,7 +12,7 @@ class Com extends Component {
               <span className='iconfont icon-lingsheng'></span>
               <span className='iconfont icon-shezhi'></span>
             </div>
-            <UserLogin />
+            <UserHadLogin />
             <div className='user-wallet'>
               <div className='user-wallet-title'>我的钱包</div>
               <div className='user-wallet-content'>
@@ -36,7 +35,6 @@ class Com extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     )
   }

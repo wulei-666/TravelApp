@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Footer from '@/components/Footer'
+
 class Com extends Component {
   componentDidMount () {
     // this.props.getHomeBannerListData();
@@ -7,9 +9,12 @@ class Com extends Component {
 
   render () {
     return (
-      <div className = "box">
-        <header className = "header">首页头部</header>
-        <div className = "content">首页内容</div>
+      <div className='container'>
+        <div className = "box">
+          <header className = "header">发现头部</header>
+          <div className = "content">发现内容</div>
+        </div>
+        <Footer />
       </div>
     )
   }

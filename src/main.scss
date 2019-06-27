@@ -12,7 +12,7 @@ html, body, #root, .container {
     @include flexbox();
     @include flex-direction(column);
     .header {
-      @include rect(100%, 0.44rem);
+      @include rect(100%, 0.4rem);
       @include background-color(#f66);
     }
     .content {
